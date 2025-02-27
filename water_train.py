@@ -13,7 +13,9 @@ dagshub.init(
 
 
 mlflow.set_experiment("water_dagshub")
-
+mlflow.set_tracking_uri(
+    "https://github.com/minhquana1906/dagshub_mlflow_exp_tracking.git"
+)
 
 data = pd.read_csv("data/water_potability.csv")
 
