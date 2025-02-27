@@ -11,11 +11,10 @@ dagshub.init(
     repo_owner="minhquana1906", repo_name="dagshub_mlflow_exp_tracking", mlflow=True
 )
 
-
-mlflow.set_experiment("water_dagshub")
 mlflow.set_tracking_uri(
-    "https://github.com/minhquana1906/dagshub_mlflow_exp_tracking.git"
+    "https://dagshub.com/minhquana1906/dagshub_mlflow_exp_tracking.mlflow"
 )
+mlflow.set_experiment("water_dagshub")
 
 data = pd.read_csv("data/water_potability.csv")
 
